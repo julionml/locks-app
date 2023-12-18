@@ -1,3 +1,32 @@
-<p>fisrt-door works!</p>
-<button mat-button color="primary">Primary</button>
-<button mat-raised-button color="primary" routerLink="/second-door">Primary</button>
+<div class="lock-aling">
+  <button
+    mat-raised-button
+    color="primary"
+    class="big-lock"
+    [disabled]="!canOpenBigLock"
+    (click)="unlockBig()"
+  >
+    <mat-icon
+      aria-hidden="false"
+      class="big-lock-icon"
+      [fontIcon]="bigLock.isLocked ? 'lock' : 'lock_open'"
+
+    ></mat-icon>
+  </button>
+
+  <div>
+    <button
+      *ngFor="let lock of smallLocks; let i = index"
+      mat-raised-button
+      color="primary"
+      class="small-lock"
+      (click)="unlock(i)"
+    >
+      <mat-icon
+        aria-hidden="false"
+        [fontIcon]="lock.isLocked ? 'lock' : 'lock_open'"
+        class="small-lock-icon"
+      ></mat-icon>
+    </button>
+  </div>
+</div>

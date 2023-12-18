@@ -1,2 +1,36 @@
-<p>third-door works!</p>
-<button mat-raised-button color="primary" routerLink="/first-door">Primary</button>
+<div class="lock-aling">
+  <button
+    mat-raised-button
+    color="primary"
+    class="big-lock"
+  >
+    <mat-icon
+      aria-hidden="false"
+      class="big-lock-icon"
+      [fontIcon]="bigLock.isLocked ? 'lock' : 'lock_open'"
+
+    ></mat-icon>
+  </button>
+
+  </div>
+  <div class="password-field">
+    <mat-form-field >
+      <mat-label>Password</mat-label>
+      <input matInput type="text" readonly [(ngModel)]="password">
+      <button *ngIf="password" matSuffix mat-icon-button aria-label="Clear" (click)="password=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+
+<div class="numbers-align">
+  <div><button mat-raised-button color="primary" *ngFor="let number of firsRowNumbers" class="number" (click)="completePasssword(number)">{{number}}</button></div>
+  <div><button mat-raised-button color="primary" *ngFor="let number of secondRowNumbers" class="number" (click)="completePasssword(number)">{{number}}</button>
+  </div>
+  <div><button mat-raised-button color="primary" *ngFor="let number of thirdRowNumbers" class="number" (click)="completePasssword(number)">{{number}}</button>
+  </div>
+  <div><button mat-raised-button color="primary" *ngFor="let number of fourthRowNumbers" class="number"(click)="completePasssword(number)">{{number}}</button>
+  </div>
+  </div>
+
+

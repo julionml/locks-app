@@ -1,0 +1,40 @@
+.numbers-align{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.number{
+  width: 100px;
+}
+
+
+.lock-aling{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.big-lock-icon{
+  width: 70px !important;
+    height: 70px !important;
+    font-size: 70px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.big-lock{
+  width: 100px;
+  height: 100px;
+}
+
+.password-field{
+  display: flex;
+justify-content: center;
+align-items: center;
+}

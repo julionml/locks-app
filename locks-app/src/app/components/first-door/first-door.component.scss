@@ -1,0 +1,32 @@
+.big-lock{
+  width: 100px;
+  height: 100px;
+}
+
+.small-lock{
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.lock-aling{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-lock-icon{
+  width: 70px !important;
+    height: 70px !important;
+    font-size: 70px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.small-lock-icon{
+
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}

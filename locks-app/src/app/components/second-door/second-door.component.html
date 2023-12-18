@@ -1,2 +1,15 @@
-<p>second-door works!</p>
-<button mat-raised-button color="primary" routerLink="/third-door">Primary</button>
+<div class="lock-aling">
+  <button
+    *ngFor="let lock of smallLocks; let i = index"
+    mat-raised-button
+    color="primary"
+    class="small-lock"
+    (click)="unlock(i)"
+  >
+    <mat-icon
+      aria-hidden="false"
+      [fontIcon]="lock.isLocked ? 'lock' : 'lock_open'"
+      class="small-lock-icon"
+    ></mat-icon>
+  </button>
+</div>

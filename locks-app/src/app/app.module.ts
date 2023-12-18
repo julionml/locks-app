@@ -8,13 +8,15 @@ import { SharedModule } from 'src/shared/shared.module';
 import { FirstDoorComponent as FirstDoorComponent } from './components/first-door/first-door.component';
 import { SecondDoorComponent } from './components/second-door/second-door.component';
 import { ThirdDoorComponent } from './components/third-door/third-door.component';
+import { CatsRoomComponent } from './components/cats-room/cats-room.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstDoorComponent,
     SecondDoorComponent,
-    ThirdDoorComponent
+    ThirdDoorComponent,
+    CatsRoomComponent
   ],
   imports: [
     BrowserModule,
