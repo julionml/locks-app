@@ -30,3 +30,16 @@
     </button>
   </div>
 </div>
+
+<div>
+  <app-simple-list *ngIf="simpleList$ | async as list" [list]="list"></app-simple-list>
+</div>
+<!-- <div>
+  <input [(ngModel)]="minutes" id="minutes" type="number">
+  <input [(ngModel)]="seconds" id="seconds" type="number">
+  <button (click)="timerStart()">start timer</button>
+  <div>
+    <span>{{minutesLeft}} Minutes</span> <span>{{secondsLeft}} Seconds</span>
+  </div>
+
+</div> -->

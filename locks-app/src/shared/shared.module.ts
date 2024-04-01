@@ -7,9 +7,11 @@ import { DoorOpenModalComponent } from './components/door-open-modal/door-open-m
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 @NgModule({
   declarations: [
-    DoorOpenModalComponent
+    DoorOpenModalComponent,
+    PokemonDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    DoorOpenModalComponent
+    DoorOpenModalComponent,
+    PokemonDetailsComponent
   ]
 })
 export class SharedModule { }

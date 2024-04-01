@@ -1,0 +1,9 @@
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  gap: 12px;}
+
+.pokemon-container > :last-child {
+  margin-bottom: 10px;
+}
